@@ -1,2 +1,20 @@
-/* some style */
+@media (min-width: 1200px) { body { font-size: xx-large; } }
+@media (min-width: 768px) and (max-width: 1199px) { body { font-size: x-large; } }
+@media (min-width: 480px) and (max-width: 767px) { body { font-size: large; } }
 
+body {
+    font-family: 'EB Garamond', serif;
+    text-rendering: optimizeLegibility;
+}
+
+.line-length {
+    max-width: 32em;
+}
+
+.heading {
+    font-size: 150%;
+}
+
+.sub-heading {
+    font-size: 120%;
+}
