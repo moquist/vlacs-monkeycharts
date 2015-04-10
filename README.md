@@ -10,5 +10,7 @@ unifinished state.
 1. ```rlwrap lein figwheel```
 1. http://localhost:3449
   1. Edit the following locations if you need to use a different host and/or port:
-  In ```project.clj```, edit :figwheel :server-port.
-  In ```dev_src/monkeycharts/dev.cljs```, edit :websocket-url.
+  
+    In ```project.clj```, edit :figwheel :server-port.
+  
+    In ```dev_src/monkeycharts/dev.cljs```, edit :websocket-url.
