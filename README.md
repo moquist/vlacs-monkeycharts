@@ -8,7 +8,7 @@ unifinished state.
 1. ```cp config-db-dist.edn config-db.edn```
 1. Edit ```config-db.edn``` to have the correct values for your VLACS database.
 1. ```rlwrap lein figwheel```
-1. http://localhost:3449
+1. Load up http://localhost:3449
   1. Edit the following locations if you need to use a different host and/or port:
   
     In ```project.clj```, edit :figwheel :server-port.
