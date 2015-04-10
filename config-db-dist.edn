@@ -1,0 +1,5 @@
+{:classname "com.postgres.jdbc.Driver"
+ :subprotocol "postgresql"
+ :subname "//db-server/db-name"
+ :user "db-user-name"
+ :password "db-user-password"}
