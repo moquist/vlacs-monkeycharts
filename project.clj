@@ -9,18 +9,25 @@
                  [figwheel "0.2.5-SNAPSHOT"]
                  [org.clojure/core.async "0.1.346.0-17112a-alpha"]
                  [sablono "0.3.4"]
-                 [org.omcljs/om "0.8.8"]]
+                 [org.omcljs/om "0.8.8"]
+
+                 ;; server side
+                 [org.clojure/java.jdbc "0.3.6"]
+                 [postgresql/postgresql "8.4-702.jdbc4"]
+                 [ring/ring "1.3.2"]
+                 [compojure "1.3.3"]
+                 [fogus/ring-edn "0.2.0"]]
 
   :plugins [[lein-cljsbuild "1.0.4"]
             [lein-figwheel "0.2.5-SNAPSHOT"]]
 
-  :source-paths ["src"]
+  :source-paths ["src/cljs" "src/clj"]
 
   :clean-targets ^{:protect false} ["resources/public/js/compiled"]
 
   :cljsbuild {
     :builds [{:id "dev"
-              :source-paths ["src" "dev_src"]
+              :source-paths ["src/cljs" "dev_src"]
               :compiler {:output-to "resources/public/js/compiled/monkeycharts.js"
                          :output-dir "resources/public/js/compiled/out"
                          :optimizations :none
@@ -30,7 +37,7 @@
                          :source-map-timestamp true
                          :cache-analysis true }}
              {:id "min"
-              :source-paths ["src"]
+              :source-paths ["src/cljs"]
               :compiler {:output-to "resources/public/js/compiled/monkeycharts.js"
                          :main monkeycharts.core
                          :optimizations :advanced
