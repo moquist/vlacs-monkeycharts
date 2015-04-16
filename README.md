@@ -1,7 +1,8 @@
 # vlacs-monkeycharts
 
-These are some relataively simple charts for VLACS, in a terrifically
-unifinished state.
+These are some relataively simple charts for VLACS, in a terrifically unifinished state.
+
+N.B.: If you're not at VLACS, this project is not useful for you at all at this point. Eventually this project will generate sample data, and at that point it might be interesting as an example for someone else.
 
 ## To make it go at this early stage:
 
